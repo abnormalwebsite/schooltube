@@ -75,7 +75,7 @@
       function convert_youtube(input) {
         var pattern = /(?:http?s?:\/\/)?(?:www\.)?(?:youtube\.com|youtu\.be)\/(?:watch\?v=)?(\S+)/g;
         if (pattern.test(input)) {
-          var replacement = "https://youtube.com/embed/$1";
+          var replacement = "https://www.youtube-nocookie.com/embed/$1";
           var input = input.replace(pattern, replacement);
           input = input.replace("&amp;t=", "?t=");
           return input;
